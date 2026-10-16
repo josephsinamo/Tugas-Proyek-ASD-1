@@ -117,7 +117,8 @@ public class SinglyLinkedList implements LinkedList{
     @Override
     public Object get(int index) {
         if (index < 0 || index >= size) {
-            throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + size);
+            System.out.println("Error: Index " + index + " tidak ada (Size: " + size + ")");
+            return null;
         }
         Node current = head;
         for (int i = 0; i < index; i++) {
