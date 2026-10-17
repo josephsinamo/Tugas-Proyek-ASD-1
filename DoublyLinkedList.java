@@ -103,10 +103,14 @@ public class DoublyLinkedList implements LinkedList{
             size--;
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
         else if(index==size-2){//menghapus tail
 =======
         else if(index==size-2){
 >>>>>>> 25d796d251d4beeb5119e771d167e384aac717b6
+=======
+        else if(index==size-2){
+>>>>>>> 6286f669ef277f2168983dfcfa2e2f1703e0716c
             this.deleteLast();
         }
         else{
@@ -126,6 +130,7 @@ public class DoublyLinkedList implements LinkedList{
 
     @Override
     public Object get(int index) {
+<<<<<<< HEAD
 <<<<<<< HEAD
         // TODO digunakan untuk mengembalikan data pada index ke-i dimulai dari head. Head memiliki index 0
         return null;
@@ -150,6 +155,8 @@ public class DoublyLinkedList implements LinkedList{
         // TODO digunakan untuk mendapatkan keseluruhan data pada node-node di linked list dalam bentuk array. Data-data pada array disusun secara urut mulai dari head sampai dengan tail.
         return null;
 =======
+=======
+>>>>>>> 6286f669ef277f2168983dfcfa2e2f1703e0716c
         if (index < 0 || index >= size) {
             System.out.println("Error: Index " + index + " tidak ada (Size: " + size + ")");
             return null;
@@ -215,6 +222,11 @@ public class DoublyLinkedList implements LinkedList{
             current = current.next;
         }
         return result;
+<<<<<<< HEAD
 >>>>>>> 25d796d251d4beeb5119e771d167e384aac717b6
     }
 }
+=======
+    }
+}
+>>>>>>> 6286f669ef277f2168983dfcfa2e2f1703e0716c

@@ -1,17 +1,24 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 /**
  * testSinglyLinkedList
 =======
+=======
+>>>>>>> 6286f669ef277f2168983dfcfa2e2f1703e0716c
 import java.util.Arrays;
 
 /**
  * testDoublyLinkedList
+<<<<<<< HEAD
 >>>>>>> 25d796d251d4beeb5119e771d167e384aac717b6
+=======
+>>>>>>> 6286f669ef277f2168983dfcfa2e2f1703e0716c
  */
 public class testDoublyLinkedList {
 
     public static void main(String[] args) {
         DoublyLinkedList linkedList = new DoublyLinkedList();
+<<<<<<< HEAD
 <<<<<<< HEAD
       linkedList.addFirst(1);
         linkedList.addFirst(2);
@@ -28,6 +35,8 @@ public class testDoublyLinkedList {
         System.out.println(linkedList.remove(8)); // Menghasilkan False
         System.out.println(linkedList.toArray()); //Menghasilkan [6,5,4,3,2,1]
 =======
+=======
+>>>>>>> 6286f669ef277f2168983dfcfa2e2f1703e0716c
         linkedList.addLast(1);
         linkedList.addLast(2);
         linkedList.addLast(3);
@@ -43,6 +52,9 @@ public class testDoublyLinkedList {
         System.out.println(linkedList.remove(3));    // true
         System.out.println(linkedList.remove(8));    // false
         System.out.println(Arrays.toString(linkedList.toArray())); // [1, 2, 4, 5, 6]
+<<<<<<< HEAD
 >>>>>>> 25d796d251d4beeb5119e771d167e384aac717b6
+=======
+>>>>>>> 6286f669ef277f2168983dfcfa2e2f1703e0716c
     }
 }

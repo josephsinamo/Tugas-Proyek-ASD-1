@@ -6,6 +6,7 @@ public class testSinglyLinkedList {
     public static void main(String[] args) {
         SinglyLinkedList linkedList = new SinglyLinkedList();
 <<<<<<< HEAD
+<<<<<<< HEAD
         linkedList.addFirst(1);
         linkedList.addFirst(2);
         linkedList.addFirst(3);
@@ -20,6 +21,8 @@ public class testSinglyLinkedList {
         System.out.println(linkedList.remove(3)); // Menghasilkan True
         System.out.println(linkedList.remove(8)); // Menghasilkan False
 =======
+=======
+>>>>>>> 6286f669ef277f2168983dfcfa2e2f1703e0716c
         linkedList.addLast(1);
         linkedList.addLast(2);
         linkedList.addLast(3);
@@ -33,7 +36,10 @@ public class testSinglyLinkedList {
         linkedList.printReverse();                   // 6,5,4,3,2,1
         System.out.println(linkedList.remove(3));    // true
         System.out.println(linkedList.remove(8));    // false
+<<<<<<< HEAD
 >>>>>>> 25d796d251d4beeb5119e771d167e384aac717b6
+=======
+>>>>>>> 6286f669ef277f2168983dfcfa2e2f1703e0716c
         System.out.println(linkedList.toArray()); //Menghasilkan [6,5,4,3,2,1]
     }
 }
