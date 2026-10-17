@@ -102,7 +102,11 @@ public class DoublyLinkedList implements LinkedList{
             temp.next = temp.next.next;
             size--;
         }
+<<<<<<< HEAD
         else if(index==size-2){//menghapus tail
+=======
+        else if(index==size-2){
+>>>>>>> 25d796d251d4beeb5119e771d167e384aac717b6
             this.deleteLast();
         }
         else{
@@ -122,6 +126,7 @@ public class DoublyLinkedList implements LinkedList{
 
     @Override
     public Object get(int index) {
+<<<<<<< HEAD
         // TODO digunakan untuk mengembalikan data pada index ke-i dimulai dari head. Head memiliki index 0
         return null;
     }
@@ -144,5 +149,72 @@ public class DoublyLinkedList implements LinkedList{
     public Object[] toArray() {
         // TODO digunakan untuk mendapatkan keseluruhan data pada node-node di linked list dalam bentuk array. Data-data pada array disusun secara urut mulai dari head sampai dengan tail.
         return null;
+=======
+        if (index < 0 || index >= size) {
+            System.out.println("Error: Index " + index + " tidak ada (Size: " + size + ")");
+            return null;
+        }
+        Node2P current = head;
+        for (int i = 0; i < index; i++) {
+            current = current.next;
+        }
+        return current.data;
+    }
+
+    @Override
+    public int indexOf(Object targetData) {
+        Node2P current = head;
+        for (int i = 0; i < size; i++) {
+            if (current.data.equals(targetData)) {
+                return i;
+            }
+            current = current.next;
+        }
+        return -1;
+    }
+
+    @Override
+    public void printReverse() {
+        Node2P current = tail;
+        while (current != null) {
+            System.out.println(current.data);
+            current = current.prev;
+        }
+    }
+
+    @Override
+    public boolean remove(Object targetData) {
+        if (isEmpty()) {
+            return false;
+        }
+        Node2P current = head;
+        while (current != null) {
+            if (current.data.equals(targetData)) {
+                if (current == head) {
+                    deleteFirst();
+                } else if (current == tail) {
+                    deleteLast();
+                } else {
+                    current.prev.next = current.next;
+                    current.next.prev = current.prev;
+                    size--;
+                }
+                return true;
+            }
+            current = current.next;
+        }
+        return false;
+    }
+
+    @Override
+    public Object[] toArray() {
+        Object[] result = new Object[size];
+        Node2P current = head;
+        for (int i = 0; i < size; i++) {
+            result[i] = current.data;
+            current = current.next;
+        }
+        return result;
+>>>>>>> 25d796d251d4beeb5119e771d167e384aac717b6
     }
 }
